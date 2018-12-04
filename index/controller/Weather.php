@@ -1,10 +1,11 @@
 <?php
 namespace app\index\controller;
+use think\Controller;
 
-class Weather
+class Weather extends Controller
 {
     public function index()
     {
-       echo "您好，今天天气不错";
+      return  $this->fetch();
     }
 }
